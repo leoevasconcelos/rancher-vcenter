@@ -16,6 +16,7 @@
 
 -> verify
 vim /etc/sysctl.conf
+
 vim /etc/sysctl.d/70-yast.conf
 
 5. Create a file disabling coud-init initial network configuration
