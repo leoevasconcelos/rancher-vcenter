@@ -12,6 +12,12 @@
 && sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab`
 4. Apply the following sysctl settings:
 `sysctl -w net.bridge.bridge-nf-call-iptables=1`
+`sysctl -w net.ipv4.ip_forward=1`
+
+-> verify
+vim /etc/sysctl.conf
+vim /etc/sysctl.d/70-yast.conf
+
 5. Create a file disabling coud-init initial network configuration
 `vim /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg`
   with the following content:
