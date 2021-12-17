@@ -15,6 +15,7 @@
 `sysctl -w net.ipv4.ip_forward=1`
 
 -> verify
+
 vim /etc/sysctl.conf
 
 vim /etc/sysctl.d/70-yast.conf
